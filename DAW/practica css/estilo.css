@@ -1,0 +1,106 @@
+*{
+  margin: 0%;  
+  padding: 0%;
+  color: #ffffff;
+  background-color:#181818;
+}
+#cabecera > header > h1{
+  background-color: #212121; 
+  margin: 0%;  
+  padding-top: 50px;
+  padding-bottom: 50px;    
+}
+hgroup>h1{
+  background-color: #212121;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: 100%;    
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35px;
+}
+p{
+  margin: 10px;
+}
+hgroup>h2{    
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+figcaption{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  color: darkgray;
+}
+#cabecera{
+  font-style: italic;
+  font-family: "Arial";
+  font-size: 19pt;  
+  border-radius: 9px;
+  text-align: center; 
+  width:100%;
+  margin: auto;
+}
+#menu > ul { 
+  margin: auto;
+  background-color: #212121; 
+  width: 60%;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;  
+}
+#menu  li { 
+  list-style: none;
+  background-color: #373737;
+  padding: 10px;
+  border-radius: 25px;
+  width: auto;  
+  text-align: center;  
+  font-size: 25px;
+  border-color: #4b4b4b ;
+  border-style: solid;
+  border-width: 1px; 
+  margin-right: 25px;  
+}
+#seccion{ 
+  width: 60%;
+  border-radius: 9px;
+  float: left; 
+  margin-left: 20%;
+  margin-bottom: 50px;   
+}
+#columna{    
+  flex-flow: column nowrap;  
+  width: 17%; 
+  margin-top: 25px;
+  border-radius: 9px;
+  float: left;
+  margin-bottom: 50px;
+  margin-left: 20px;  
+  background-color: #212121;
+  padding-top: 1%;   
+}
+#columna>blockquote{  
+    width: 90%;
+    margin: auto;
+    background-color: #212121;
+    margin-bottom:50px;          
+  }
+#pie{
+  font-style: italic;
+  font-family: "Arial";
+  font-size: 16pt;  
+  background-color: #212121;  
+  clear: both;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+figure img{
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 10px;
+}
