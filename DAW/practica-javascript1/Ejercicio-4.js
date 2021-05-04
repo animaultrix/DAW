@@ -1,3 +1,5 @@
+//Explica brevemente qué pasa línea por línea en el siguiente código e indica cuál será el resultado en pantalla:
+
 var modelos = [ "Monovolumen", "Berlina", "Todoterreno" ];//Crea un Array con 3 String
 modelos.push("Roadster");//Añade el String Roadster al final del Array
 modelos.unshift("Deportivo");//Añade el String Deportivo al principio del Array
