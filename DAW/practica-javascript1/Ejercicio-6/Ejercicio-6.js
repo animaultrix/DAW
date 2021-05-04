@@ -2,13 +2,12 @@
   y la web responda con la cantidad de caracteres que se han escrito y las veces
   que se repite cada uno de los que forman la frase.*/
 
-var _frase = prompt('Introduce frase');
-var _letras = _frase.split('');
-var _tamano = 0;
-var _cantidadDeCadaLetra = '';
-
 //Se cuenta la cantidad de cada caracter sin contar espacios en blanco
 function cuenta(){
+    var _frase = prompt('Introduce frase');
+    var _letras = _frase.split('');
+    var _tamano = 0;
+    var _cantidadDeCadaLetra = '';
     while(_letras.length != 0){
     
         var _cantidad = 0;
