@@ -108,7 +108,7 @@ Insertar caracteres en pantalla
 *********************************/
 function insertar (caracter) {
 
-    if ($('#pantalla').val() == 0 && caracter != "." && $('#pantalla').val() != '0.' && caracter != 'x' && caracter != '-' && caracter != '+' && caracter != '÷') {
+    if ($('#pantalla').val() == '0' && caracter != "." && caracter != 'x' && caracter != '-' && caracter != '+' && caracter != '÷') {
 
         $('#pantalla').val("");
         if ($('#pantalla').val().length < 16) {
