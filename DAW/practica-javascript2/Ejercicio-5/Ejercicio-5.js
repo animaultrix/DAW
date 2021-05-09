@@ -13,7 +13,7 @@ function abrir(){
 }
 function insertar (numero) {
 
-    if ($('#pantalla').val() == 0 && numero != "." && $('#pantalla').val() != '0.') {
+    if ($('#pantalla').val() == 0 && numero != "." && $('#pantalla').val() != '0.' && numero != 'x' && numero != '-' && numero != '+' && numero != '÷') {
 
         $('#pantalla').val("");
         if ($('#pantalla').val().length < 16) {
