@@ -1,21 +1,79 @@
-//Crea una web en la que aparezca una calculadora con un formato 
-// CSS atractivo para los usuarios y que ejecute al menos cada una 
-// de las cuatro operaciones aritméticas básicas: suma, resta, 
-// multiplicación y división; además de contar con un botón que 
-// limpie la pantalla y elimine la información registrada. Tanto 
-// el formato CSS como la funcionalidad de la calculadora deben 
-// aparecer de forma externa.
-
+$(document).ready(function () {
+    $('#modal').hide();
+    $('#btn-cerrar').hide();
+});
+function cerrar() {
+    
+    $('#modal').hide(3000);
+    $('#btn-cerrar').hide(3000);
+}
+function abrir(){
+    $('#modal').show(3000);
+    $('#btn-cerrar').show(3000);
+}
 function insertar (numero) {
 
-    $('#pantalla').val($('#pantalla').val() + numero);
+    if ($('#pantalla').val() == 0 && numero != "." && $('#pantalla').val() != '0.') {
+
+        $('#pantalla').val("");
+        if ($('#pantalla').val().length < 16) {
+
+            $('#pantalla').val($('#pantalla').val() + numero);
+        }
+         else{
+    
+            $('#pantalla').val("Excede de tamaño ");
+        } 
+    }
+    else{
+        if ($('#pantalla').val().length < 16) {
+
+            $('#pantalla').val($('#pantalla').val() + numero);
+        }
+         else{
+    
+            $('#pantalla').val("Excede de tamaño ");
+        } 
+    }    
 }
 function igual (){
 
     var resultado = $('#pantalla').val().replace(/÷/g,'/').replace(/x/g,'*');// /x/g /÷/g expresiones regulares
-    $('#pantalla').val(eval(resultado));
+    try {
+
+        eval(resultado); 
+    } catch (e) {
+
+        if (e instanceof SyntaxError) {
+            
+            console.log(e.message);
+            $('#pantalla').val("Error de sintaxis   ");
+        }
+    }
+    if (Number.isInteger(eval(resultado))) {
+
+        if (eval(resultado).toString().length < 17) {
+
+            $('#pantalla').val(eval(resultado));
+        }
+         else{
+
+            $('#pantalla').val("Excede de tamaño ");
+        }    
+        
+    } else {
+
+        if (eval(resultado).toString().length < 17) {
+
+            $('#pantalla').val(eval(resultado).toFixed(2));
+        }
+         else{
+
+            $('#pantalla').val("Excede de tamaño ");
+        }
+    }
 }
 function limpiar() {
-    
-    $('#pantalla').val('');
+
+    $('#pantalla').val('0');
 }
