@@ -1,3 +1,5 @@
+<!-- Explica brevemente qué pasa, línea por línea, en el siguiente código e indica cuándo 
+     se llevará a cabo y cuál será la consecuencia: -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,10 +9,16 @@
 </head>
 <body>
     <script>
+//Se abre la etiqueta <script> para poder escribir una script dentro del documentos .html.
         $(document).ready(function () {
-            $("#boton").mouseover(function (event) { 
+//El método .ready() ejecuta una función cuando haya cargado el documento .html (document).
+//En este caso pone en escucha al evento .mouseover().
+            $("#boton").mouseover(function (event) {
+//El método .mouseover() ejecuta una función cuando se pasa el cursor por encima del 
+//contenedor con la id="boton", en este caso un button.
                 $("ul#listas").append('<li>Elemento</li>');
-                console.log("entra");
+//El método .append() agrega strings al documento .html. En este caso '<li>Elemento</li>' 
+//en el contenedor <ul id="listas">.            
             });
         });
     </script>
@@ -20,3 +28,5 @@
     </ul>
 </body>
 </html>
+<!-- En resumen lo que hara el script sera imprimir una fila en el navegador con el mensaje 
+     'Elemento' cada vez que pasemos por encima del botón "pasa por encima" con el cursor. -->
