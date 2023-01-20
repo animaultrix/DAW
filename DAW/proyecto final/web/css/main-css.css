@@ -1,0 +1,29 @@
+* {   
+    padding: 0px;
+    border-spacing: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #121212;
+    margin-top: 147px;
+}
+a.myanchor {
+    display: block;
+       position: relative;
+       top: -179px;
+       visibility: hidden;
+}
+.titulo-css{
+    padding-top: 80px;
+}
+.titulo{
+    padding-top: 50px;
+}
+footer{    
+    padding: 100px;
+    margin-top: 125px; 
+}
+#ultimo + div{
+    visibility: hidden;
+}
+       
